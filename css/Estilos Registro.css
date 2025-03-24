@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*margen y padding para todo el cuerpo de la pagina*/
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: bisque; /*color y tamaño del cuerpo de toda la pagina*/
+    font-family: sans-serif;
+}
+
+/*Inicio de la sección 1 (Cabecero de la pagina)*/
+
+.seccion1{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; 
+    background-color: white;
+    height: 100px;
+}
+.header{
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo img{
+    object-fit: contain;
+    margin: 10px 30px;
+    width: 100px;
+    padding: 1px;
+}
+.search input{
+    width: 520px;
+    height: 40px;
+    padding: 10px;
+}
+.registro-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.register{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.img-register{
+    width: 30px;
+    height: 30px;
+}
+.links-registro{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.links-registro a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    line-height: 1.2;
+    gap: 15px;
+}
+.button-whatsapp img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.shop-car img{
+    width: 30px;
+    height: 30px;
+}
+
+/*Fin Sección 1 (Cabecero)*/
+
+/*Inicio sección 2 (Barra de navegación)*/
+
+.seccion2{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; 
+    background-color: red;
+    height: 35px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.nav-categories ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-categories li{
+    float: left;
+}
+.nav-categories li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+.nav-categories li :hover{
+    background-color: black;
+}
+/*Fin sección 2 (Barra de navegación)*/

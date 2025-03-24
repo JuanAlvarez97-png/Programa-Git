@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*margen y padding para todo el cuerpo de la pagina*/
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+/*color y tamaño del cuerpo de toda la pagina*/
+    font-family: sans-serif;
+}
+
+/*Inicio de la sección 1 (Cabecero de la pagina)*/
+
+.seccion1{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; 
+    background-color: white;
+    height: 100px;
+}
+.header{
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo img{
+    object-fit: contain;
+    margin: 10px 30px;
+    width: 100px;
+    padding: 1px;
+}
+.search input{
+    width: 520px;
+    height: 40px;
+    padding: 10px;
+}
+.registro-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.register{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.img-register{
+    width: 30px;
+    height: 30px;
+}
+.links-registro{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.links-registro a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    line-height: 1.2;
+    gap: 15px;
+}
+.button-whatsapp img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.shop-car img{
+    width: 30px;
+    height: 30px;
+}
+
+/*Fin Sección 1 (Cabecero)*/
+
+/*Inicio sección 2 (Barra de navegación)*/
+
+.seccion2{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; 
+    background-color: red;
+    height: 35px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.nav-categories ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-categories li{
+    float: left;
+}
+.nav-categories li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+.nav-categories li :hover{
+    background-color: black;
+}
+/*Fin sección 2 (Barra de navegación)*/
+
+/*Inicio de sección 3 (Banners Publicitarios)*/
+
+.seccion3{
+    width: 90%;
+    max-width: 1100px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.main-banner{   /* articulo que forma el Banner de mayor tamaño*/
+    width: 600px;
+}
+.big-banner{    /*Bloque que conforma el espacio que ocupa el banner de mayor tamaño, adicional la imagen de los productos o publicidad se inseta de fondo*/
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    position: relative;
+    margin: 10px 10px;
+    justify-content: center;
+    height: 430px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.big-banner img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gainsboro;
+    justify-content: center;
+    height: 440px;
+}
+.button-big-banner{
+    position: absolute;
+    bottom: 20px;
+    left: 1%;
+    transform: translateX(-20%);
+    margin: 0 30px;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+}
+.button-big-banner a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.button-big-banner:hover{
+    background-color: floralwhite;
+}
+.small-banners{
+    width: 550px;
+}
+.small-banner1{
+    position: relative;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    min-height: 140px;
+    margin: 10px 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+.small-banner1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.button-small-banner1{
+    position: absolute;
+    bottom: 10px;
+    margin: 0 20px;
+    padding: 5px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+.button-small-banner1 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.button-small-banner1:hover{
+    background-color: floralwhite;
+}
+.small-banner2{
+    position: relative;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    min-height: 136px;
+    margin: 10px 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+.small-banner2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.button-small-banner2{
+    position: absolute;
+    bottom: 10px;
+    margin: 0 20px;
+    padding: 5px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+.button-small-banner2 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.button-small-banner2:hover{
+    background-color: floralwhite;
+}
+.small-banner3{
+    position: relative;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    min-height: 136px;
+    margin: 10px 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+.small-banner3 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.button-small-banner3{
+    position: absolute;
+    bottom: 10px;
+    margin: 0 20px;
+    padding: 5px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+.button-small-banner3 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.button-small-banner3:hover{
+    background-color: floralwhite;
+}
+/*Fin de sección 3 (Banners Publicitarios)*/
+
+/*Inicio sección 4 (articulo de categorias)*/
+
+.seccion4 {
+    width: 90%;
+    max-width: 1100px;
+    height: 120px;
+    margin: 0 auto; 
+    display: flex;
+    background-color: white;
+}
+.title {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.categories-section { 
+    display: flex;
+    width: 90%;
+    justify-content: left;
+    overflow-x: auto;
+    padding: 5px;
+}
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    margin: 0 5px;
+}
+.category-item img {
+    width: 70px; /* Mismo ancho que el contenedor */
+    height: 70px; /* Mismo alto que el ancho para hacerlo circular */
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+.category-item span {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: black;
+}
+.category-item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px; /* Ancho fijo para el contenedor */
+}
+.category-item a :hover{
+    color: gray;
+}
+
+/*Fin de la sección 4 (Articulo de Categorias)*/
+
+/*Inicio de la sección 5 (Vitrina de Productos - Novedades)*/
+
+.seccion5{
+    width: 90%;
+    max-width: 1100px;
+    height: 460px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+.article-new-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.titulo-novedades {
+    width: 100%;
+    margin-bottom: 1px;
+    font-size: 13px;
+}
+.new-products{
+    flex: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.new-products1 {
+    position: relative;
+    padding-top: 100%; /* Esto crea un contenedor cuadrado */
+    width: 100%;
+}
+.new-products1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que la imagen se ajuste manteniendo sus proporciones */
+}
+.text-products1 {
+    padding: 15px;
+}
+.text-products1 button {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Hace que el botón sea un bloque */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+}
+.text-products1 button:hover {
+    background-color: #90EE90;
+}
+
+/*Fin de la sección 5 (Vitrina de Productos - Novedades)*/
+
+/*Inicio de la sección 6 (Ofertas)*/
+
+/*Inicio de la sección 5 (Vitrina de Productos - Novedades)*/
+
+.seccion6{
+    width: 90%;
+    max-width: 1100px;
+    height: 460px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+}
+.article-new-offers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.titulo-ofertas {
+    width: 100%;
+    margin-bottom: 1px;
+    font-size: 13px;
+}
+.new-offers{
+    flex: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.new-offers1 {
+    position: relative;
+    padding-top: 100%; /* Esto crea un contenedor cuadrado */
+    width: 100%;
+}
+.new-offers1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que la imagen se ajuste manteniendo sus proporciones */
+}
+.text-offers1 {
+    padding: 15px;
+}
+.text-offers1 button {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Hace que el botón sea un bloque */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+}
+.text-offers1 button:hover {
+    background-color: #90EE90;
+}
+
+/*Fin de la sección 6 (Ofertas)*/
+
+/*Inicia sección 7*/ 
+.section-5{
+    width: 90%;
+    max-width: 1100px;
+    height: 90%;
+    margin: 0 auto;
+}
+.logos-footer{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+}
+.categoria-contactanos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.cat-footer{
+    padding: 10px 10px;
+    margin-right: 80px;
+    margin-top: 5px;
+}
+.cat-footer h2{
+    font-size: 20px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+}
+.cat-footer a{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: -30px;
+}
+.contacto h2{
+    font-size: 13px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+}
+.contacto a{
+    font-size: 15px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.contacto p{
+    font-size: 15px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------*/
+.Mas-Información{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: -30px;
+}
+.Mas-Información h2{
+    font-size: 13px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+}
+.Mas-Información a{
+    font-size: 15px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.Mas-Información p{
+    font-size: 14px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 3px 0;
+    text-decoration: none;
+}
+.subs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 30px;
+    margin-top: -80px;
+}
+.subs h2{
+    font-size: 20px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 5px 0;
+}
+.subs p{
+    font-size: 13px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.subs input{
+    width: 400px;
+    height: 30px;
+}
+.logos-pagos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid gainsboro;
+}
+.logos-pagos hr{
+    color: gray;
+    width: 100%;
+    height: 1px;
+}
+.logos-pagos p{
+    font-size: 20px;
+    white-space: normal;
+    font-family: Inter, sans-serif;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 11px;
+}
+/*Fin de la seccion 7*/
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    .header{
+        flex-direction: column;
+    }
+    .search input{
+        width: 350px;
+        height: 40px;
+        padding: 10px;
+    }
+    .registro-container{
+        padding: 15px;
+    }
+
+
+}
+
+
